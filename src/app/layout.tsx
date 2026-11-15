@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Vikas Shrivastava — Software Engineer | Java · Spring Boot · React",
   description:
-    "Computer Science graduate and C-DAC PG-DAC trainee building full-stack web applications with Java, Spring Boot, React.js and MySQL. Seeking an entry-level Software Engineer role.",
+    "Software Engineer building and deploying full-stack web applications with Java, Spring Boot, React.js and MySQL. Shipped SkillBridge, a live remote job portal on Vercel. Seeking an entry-level Software Engineer role.",
   keywords: [
     "Vikas Shrivastava",
     "Software Engineer",

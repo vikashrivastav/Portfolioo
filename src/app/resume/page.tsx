@@ -15,7 +15,8 @@ const PROJECTS = [
     points: [
       "Live at cdac-skillbridge.vercel.app · github.com/vikashrivastav/skillbridge",
       "Full-stack remote job portal connecting candidates with job opportunities; responsive React frontend with verified skill-based matching",
-      "RESTful backend APIs with Spring Boot and MySQL for data persistence",
+      "RESTful backend APIs with Spring Boot, Spring Data JPA and MySQL for data persistence",
+      "Deployed and maintained the application end to end — frontend hosted on Vercel",
     ],
   },
   {
@@ -45,6 +46,7 @@ const SKILLS: Array<[string, string]> = [
   ["Frameworks", "Spring Boot, Spring MVC, Hibernate, Spring Data JPA, React.js"],
   ["Web", "HTML, CSS, JavaScript, REST APIs, Bootstrap"],
   ["Databases & Tools", "MySQL, Git/GitHub, VS Code, Eclipse, Linux"],
+  ["Deployment & Hosting", "Vercel, Render"],
 ];
 
 export default function ResumePage() {
@@ -73,10 +75,12 @@ export default function ResumePage() {
         <section>
           <h2>Summary</h2>
           <p>
-            Computer Science graduate and C-DAC PG-DAC trainee with hands-on experience in Java,
-            Spring Boot, REST APIs, SQL and full-stack web development. Strong foundation in OOP,
-            DSA, DBMS, Git and software development practices, with experience building backend and
-            CRUD-based applications. Seeking an entry-level Software Engineer role.
+            Software Engineer with hands-on experience building and deploying full-stack web
+            applications in Java, Spring Boot, React.js and MySQL. Shipped SkillBridge, a live
+            remote job portal built on Spring Boot REST APIs, Spring Data JPA and a responsive
+            React frontend hosted on Vercel. B.Tech in Computer Science and C-DAC PG-DAC trainee
+            with a strong foundation in OOP, DSA and DBMS. Seeking an entry-level Software
+            Engineer role where I can contribute from day one.
           </p>
         </section>
 
@@ -88,9 +92,19 @@ export default function ResumePage() {
               <span>2026 · Bengaluru</span>
             </div>
             <ul>
-              <li>Completed intensive training in Java, Object-Oriented Programming, Data Structures &amp; Algorithms and Database Technologies</li>
-              <li>Built web applications with Java, Spring Boot, REST APIs, React.js and MySQL</li>
-              <li>Practiced software development using Git, Linux, debugging, testing and databases</li>
+              <li>Intensive training in Java, OOP, Data Structures &amp; Algorithms and Database Technologies</li>
+              <li>Built web applications using Java, Spring Boot, REST APIs, React.js and MySQL</li>
+              <li>Practical software development with Git, Linux, debugging, testing and databases</li>
+            </ul>
+          </div>
+          <div className="resume-entry">
+            <div className="resume-entry-head">
+              <b>Full Stack Development Intern — Thiranex (Internship, Remote / Project-Based)</b>
+              <span>May 2026 – June 2026</span>
+            </div>
+            <ul>
+              <li>Worked on practical full-stack development projects under industry mentorship</li>
+              <li>Progress reviewed periodically against project milestones</li>
             </ul>
           </div>
         </section>
@@ -126,13 +140,14 @@ export default function ResumePage() {
               <b>PG-DAC — Centre for Development of Advanced Computing (C-DAC), Bengaluru</b>
               <span>2026</span>
             </div>
+            <p>CGPA 6.9 / 10</p>
           </div>
           <div className="resume-entry">
             <div className="resume-entry-head">
               <b>B.Tech — Computer Science &amp; Engineering, Shri Shankaracharya Technical Campus, Bhilai (CSVTU)</b>
               <span>2021 – 2025</span>
             </div>
-            <p>CGPA 7.11 / 10 (65.2%)</p>
+            <p>CGPA 7.11 / 10</p>
           </div>
           <div className="resume-entry">
             <div className="resume-entry-head">
@@ -145,7 +160,7 @@ export default function ResumePage() {
 
         <section>
           <h2>Certifications</h2>
-          <p>Java Programming for Beginners — IBM, Coursera (2026) · Introduction to Software Engineering — IBM, Coursera (2026) · Object-Oriented Programming with Java — Coursera (2026)</p>
+          <p>Java Programming for Beginners — IBM, Coursera (2026) &nbsp;·&nbsp; Introduction to Software Engineering — IBM, Coursera (2026)</p>
         </section>
       </article>
     </main>

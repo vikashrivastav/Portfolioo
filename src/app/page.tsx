@@ -20,7 +20,7 @@ const PROJECTS = [
   {
     index: "01",
     title: "SkillBridge — Remote Job Portal",
-    tagline: "Full-stack portal where candidates prove skills and employers match on verified tags. Live since May 2026 — responsive React frontend, Spring Boot APIs, MySQL.",
+    tagline: "Full-stack portal where candidates prove skills and employers match on verified tags. Live since May 2026 — Spring Boot REST APIs, Spring Data JPA, responsive React frontend; deployed and maintained end to end on Vercel.",
     stack: ["React.js", "Spring Boot", "REST APIs", "MySQL", "Spring Data JPA"],
     grad: "linear-gradient(135deg,#1d3a6e 0%,#3b82f6 55%,#93c5fd 100%)",
     live: "https://cdac-skillbridge.vercel.app",
@@ -76,22 +76,30 @@ const TRAINING = [
     ],
   },
   {
+    role: "Full Stack Development Intern",
+    org: "Thiranex · Internship (Remote / Project-Based)",
+    when: "May 2026 — June 2026",
+    points: [
+      "Worked on practical full-stack development projects under industry mentorship",
+      "Progress reviewed periodically against project milestones",
+    ],
+  },
+  {
     role: "Professional Certifications",
     org: "IBM · Coursera",
     when: "2026",
     points: [
       "Java Programming for Beginners — IBM, Coursera",
       "Introduction to Software Engineering — IBM, Coursera",
-      "Object-Oriented Programming with Java — Coursera",
     ],
   },
 ];
 
 const EDUCATION = [
-  { step: "01 / DIPLOMA", title: "PG-DAC — Post Graduate Diploma in Advanced Computing", meta: "Centre for Development of Advanced Computing (C-DAC), Bengaluru · Feb 2026 batch", score: "C-DAC", unit: "Advanced Computing" },
-  { step: "02 / DEGREE", title: "B.Tech — Computer Science & Engineering", meta: "Shri Shankaracharya Technical Campus, Bhilai (CSVTU) · 2021 – 2025", score: "7.11", unit: "CGPA / 10 · 65.2%" },
+  { step: "01 / DIPLOMA", title: "PG-DAC — Post Graduate Diploma in Advanced Computing", meta: "Centre for Development of Advanced Computing (C-DAC), Bengaluru · Feb 2026 batch", score: "6.9", unit: "CGPA / 10" },
+  { step: "02 / DEGREE", title: "B.Tech — Computer Science & Engineering", meta: "Shri Shankaracharya Technical Campus, Bhilai (CSVTU) · 2021 – 2025", score: "7.11", unit: "CGPA / 10" },
   { step: "03 / SCHOOL", title: "Higher Secondary (XII) — PCM", meta: "Sun Shine H.S. School, Durg · CGBSE · 2021", score: "92%", unit: "Division I" },
-  { step: "04 / SCHOOL", title: "Secondary (X) — General", meta: "Vishwadeep H.R. Sec. School, Durg · CBSE · 2018", score: "48.4%", unit: "Division III" },
+  { step: "04 / SCHOOL", title: "Secondary (X) — General", meta: "Vishwadeep H.R. Sec. School, Durg · CBSE · 2018", score: "Division III", unit: "CBSE" },
 ];
 
 const SKILL_GROUPS = [
@@ -99,6 +107,7 @@ const SKILL_GROUPS = [
   { label: "Frameworks", chips: ["Spring Boot", "Spring MVC", "Hibernate", "Spring Data JPA", "React.js"] },
   { label: "Web & APIs", chips: ["HTML5", "CSS3", "Bootstrap", "REST APIs"] },
   { label: "Databases & Tools", chips: ["MySQL", "Git / GitHub", "VS Code", "Eclipse", "Linux"] },
+  { label: "Deployment & Hosting", chips: ["Vercel", "Render"] },
 ];
 
 export default function Home() {
@@ -131,13 +140,14 @@ export default function Home() {
             <p className="hero-role"><span className="rule" aria-hidden="true" /> Software Engineer — Java · Spring Boot · React</p>
 
             <p className="hero-bio">
-              I&apos;m a Computer Science graduate and C-DAC PG-DAC trainee. I build
-              full-stack web applications end to end — Java and Spring Boot APIs, MySQL schemas,
-              and responsive React interfaces.
+              I&apos;m a Software Engineer — B.Tech in Computer Science, PG-DAC from
+              C-DAC, and a Thiranex full-stack intern. I build and deploy full-stack web
+              applications end to end — Java and Spring Boot REST APIs, MySQL persistence,
+              responsive React interfaces.
             </p>
 
             <div className="hero-cta">
-              <a className="btn btn-ghost" href="/resume" target="_blank" rel="noopener">
+              <a className="btn btn-ghost" href="/Vikas-Shrivastava-Resume.pdf" target="_blank" rel="noopener" aria-label="Open résumé PDF">
                 <DownloadIcon width={18} height={18} /> Résumé
               </a>
               <a className="btn btn-solid" href="#about">
@@ -199,13 +209,13 @@ export default function Home() {
               <div className="stat"><b><Counter target={4} suffix="" /></b><span>Projects built</span></div>
               <div className="stat"><b>7.11</b><span>B.Tech CGPA / 10</span></div>
               <div className="stat"><b><Counter target={92} suffix="%" /></b><span>XII board score</span></div>
-              <div className="stat"><b><Counter target={4} suffix="" /></b><span>Certifications</span></div>
+              <div className="stat"><b><Counter target={2} suffix="" /></b><span>Certifications</span></div>
             </div>
 
             <div className="about-grid">
               <div className="about-copy">
-                <p>I&apos;m <strong>Vikas Shrivastava</strong> — a Computer Science graduate from Shri Shankaracharya Technical Campus, Bhilai, and a <strong>PG-DAC trainee at C-DAC Bengaluru</strong>. I&apos;m drawn to the full arc of a product — schema design, API contracts, business logic and the interface on top.</p>
-                <p>My stack is <strong>Java and Spring Boot</strong> on the backend, <strong>React.js</strong> on the frontend and <strong>MySQL</strong> underneath. I designed and shipped <strong>SkillBridge</strong>, a full-stack remote job portal with verified skill tagging — live at cdac-skillbridge.vercel.app.</p>
+                <p>I&apos;m <strong>Vikas Shrivastava</strong> — a B.Tech Computer Science graduate from Shri Shankaracharya Technical Campus, Bhilai, <strong>PG-DAC from C-DAC Bengaluru</strong>, and a <strong>Full Stack Development intern at Thiranex</strong> (remote, project-based). I&apos;m drawn to the full arc of a product — schema design, API contracts, business logic and the interface on top.</p>
+                <p>My stack is <strong>Java and Spring Boot</strong> on the backend, <strong>React.js</strong> on the frontend and <strong>MySQL</strong> underneath. I shipped <strong>SkillBridge</strong>, a live remote job portal — Spring Boot REST APIs, Spring Data JPA persistence, a responsive React frontend, deployed and maintained end to end on Vercel.</p>
                 <p>When I&apos;m not coding, I&apos;m usually solving chess positions or going deep on why something breaks — understanding beats guessing. I&apos;m looking for an <strong>entry-level Software Engineer</strong> role where I can contribute from day one and keep leveling up.</p>
               </div>
 
@@ -305,7 +315,6 @@ export default function Home() {
               <ul>
                 <li>Java Programming for Beginners <small>IBM · Coursera · 2026</small></li>
                 <li>Introduction to Software Engineering <small>IBM · Coursera · 2026</small></li>
-                <li>Object-Oriented Programming with Java <small>Coursera · 2026</small></li>
               </ul>
             </div>
           </div>
