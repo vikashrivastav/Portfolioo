@@ -99,7 +99,7 @@ const EDUCATION = [
   { step: "01 / DIPLOMA", title: "PG-DAC — Post Graduate Diploma in Advanced Computing", meta: "Centre for Development of Advanced Computing (C-DAC), Bengaluru · Feb 2026 batch", score: "6.9", unit: "CGPA / 10" },
   { step: "02 / DEGREE", title: "B.Tech — Computer Science & Engineering", meta: "Shri Shankaracharya Technical Campus, Bhilai (CSVTU) · 2021 – 2025", score: "7.11", unit: "CGPA / 10" },
   { step: "03 / SCHOOL", title: "Higher Secondary (XII) — PCM", meta: "Sun Shine H.S. School, Durg · CGBSE · 2021", score: "92%", unit: "Division I" },
-  { step: "04 / SCHOOL", title: "Secondary (X) — General", meta: "Vishwadeep H.R. Sec. School, Durg · CBSE · 2018", score: "Division III", unit: "CBSE" },
+  { step: "04 / SCHOOL", title: "Secondary (X) — General", meta: "Vishwadeep H.R. Sec. School, Durg · CBSE · 2018", score: "CBSE", unit: "" },
 ];
 
 const SKILL_GROUPS = [
@@ -249,7 +249,7 @@ export default function Home() {
                   <span className="edu-step">{e.step}</span>
                   <h3>{e.title}</h3>
                   <p className="edu-meta">{e.meta}</p>
-                  <div className="edu-score">{e.score}<small>{e.unit}</small></div>
+                  <div className="edu-score">{e.score}{e.unit && <small>{e.unit}</small>}</div>
                 </article>
               ))}
             </div>
